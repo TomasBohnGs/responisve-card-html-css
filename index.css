@@ -1,0 +1,116 @@
+body{
+    margin: 0px;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+.mainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 375px;
+    border-radius: 15px;
+}
+#image-desktop{
+    display: none;
+}
+#image{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+#perfume{
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #848484;
+}
+.textContainer{
+    margin: 20px
+}
+.textContainer h1{
+    font-family: 'Fraunces';
+    font-size: 35px;
+}
+#description{
+    font-size: 16px;
+    line-height: 25px;
+    color: #848484;
+}
+.priceContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#newPrice{
+    margin: 2px;
+    margin-right: 15px;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+    font-size: 45px;
+}
+#oldPrice{
+    text-decoration: line-through;
+    color: #848484;
+}
+.textContainer button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-size: 17px;
+
+}
+
+.textContainer button svg{
+    margin-right: 10px;
+}
+
+@media (min-width: 650px) {
+    .container{
+        border-radius: 15px;
+        width: 620px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .textContainer{
+        margin: 22px;
+    }
+    #image-desktop{
+        display: flex;
+        height: 500px;
+        border-radius: 15px 0px 0px 15px;
+    }
+    #image{
+        display: none;
+        /* visibility: hidden; */
+    }
+    #description{
+        font-size: 14px;
+    }
+    #newPrice{
+        font-size: 30px;
+    }
+    #oldPrice{
+        font-size: 12px;
+    }
+    .priceContainer{
+        margin-bottom: 15px;
+    }
+    .textContainer button{
+        font-size: 14px;
+        height: 40px;
+    }
+}
